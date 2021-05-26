@@ -1,0 +1,5 @@
+thumbs.db
+.DS*
+config.js
+*.log
+config.php

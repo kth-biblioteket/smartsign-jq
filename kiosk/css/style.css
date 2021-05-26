@@ -1,0 +1,81 @@
+body {
+    overflow: hidden;
+}
+
+.lokalbokningar {
+    padding:0px 75px 0px 75px;
+    font-size: 28px;
+    height: 100%;
+    color: #000;
+
+}
+
+.bookingheader  {
+    font-size: 40px;
+}
+
+.bookingrow  {
+    font-size: 32px;
+}
+  
+.Smartsign-item {
+    width: 260px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.eventtime {
+    width:210px;
+    float:left;
+}
+
+.eventobject {
+    width:250px;
+    float:left;
+}
+
+.eventtitle {
+    width:340px;
+    float:left;
+    word-wrap: break-word;
+}
+
+.grey {
+    background-color: grey
+}
+
+.red {
+    background-color: rgb(226, 70, 70);
+}
+
+.orange {
+    background-color: rgb(223, 165, 57);
+}
+
+.yellow {
+    background-color: rgb(236, 236, 56);
+}
+  
+.green {
+    background-color: rgb(54, 165, 54);
+}
+
+.redsquare {
+	width: 40px;
+	height: 40px;
+	background: rgb(226, 70, 70);
+}
+
+.greensquare {
+	width: 40px;
+	height: 40px;
+	background: rgb(54, 165, 54);
+}
+
+.chartcontainer {
+    width: 380px;
+    height: 380px;
+    margin-bottom: 30px;
+}

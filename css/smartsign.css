@@ -1,0 +1,135 @@
+/* Chromium färger PDF */
+html {
+    -webkit-print-color-adjust: exact;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+  
+h1 {
+    font-size: 88px;
+}
+  
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: bold;
+}
+  
+h6 {
+   font-size: 32px; 
+}
+
+.App {
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+    /* smartsignskärmarnas upplösning */
+    height: 1900px;
+    width: 1080px;
+    font-family: "Open Sans",Arial,"Helvetica Neue",helvetica,sans-serif;
+}
+
+.App-padding {
+    padding: 60px 54px 0px 54px;
+}
+
+.App-padding-top {
+    padding-top:60px;
+}
+  
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+  
+.App-header {
+    overflow: hidden;
+}
+
+.App-header .kthlogo {
+    flex:20;
+    float: left
+}
+
+.App-header .kthlogo img{
+    width:150px
+}
+
+.headertext {
+    float:right;
+    padding-top:0px;
+}
+  
+.App-title {
+    font-size: 1.5em;
+    position: relative;
+}
+
+.App-title .titleimage img {
+    width: 100%;
+    /*margin: 0px 0 0 0px;*/
+}
+
+.App-title .rubrikplatta {
+    position: absolute;
+    width: 800px;
+    top: 240px;
+    left: 0px;
+    background: #fff;
+    padding: 10px 25px 10px 135px;
+    font-weight: bold;
+    font-size: 46px;
+}
+  
+.App-intro {
+    font-size: large;
+}
+  
+.App-content {
+    font-weight:500;
+    font-size: 40px;
+}
+
+.content-padding {
+    padding:60px 135px 0px 135px;
+}
+
+.content-header {
+    font-size: 40px;
+}
+
+.gauge-header-small {
+    font-size: 30px;
+}
+
+.gauge-header-medium {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.gauge-header-large {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.App-footer {
+    flex-direction: column;
+    margin:5px 5px;
+    font-size: 20px;
+}
+
+.float {
+    overflow: hidden;
+}
