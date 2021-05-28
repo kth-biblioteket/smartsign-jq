@@ -174,7 +174,7 @@ $(document).ready(function() {
         var html = '';
         $.ajax({
             cache: false,
-            url: 'imasapi.php?locationid=KTHBIB',
+            url: 'https://apps.lib.kth.se/imas/imas.json',
             /*{"ContentEncoding":null,
             "ContentType":null,
             "Data":{
