@@ -1,22 +1,10 @@
 <?php
 require_once "config.php";
-session_start();
 date_default_timezone_set("Europe/Stockholm");
 header("Content-type:application/json; charset=utf-8");
 $locationid = $_GET["locationid"];
-if (isset($_SESSION['X-Auth-Token']) && $_SESSION['X-Auth-Token'] != "") {
 
-} else {
-    $_SESSION['X-Auth-Token'] = getToken();
-}
-$data = getRealTimeData($_SESSION['X-Auth-Token']);
-if ($data == 403) {
-    $_SESSION['X-Auth-Token'] = getToken();
-    $data = getRealTimeData($_SESSION['X-Auth-Token']);
-    echo $data;
-} else {
-    echo $data;
-}
+echo getRealTimeData(getToken());
 
 function getHeaders($respHeaders) {
     $headers = array();
@@ -88,13 +76,7 @@ function getRealTimeData($token) {
     {
         print_r('Curl error: ' . curl_error($ch));
     }
-    if (curl_getinfo($ch, CURLINFO_HTTP_CODE) == 403) {
-        curl_close($ch);
-        return 403;
-    } else {
-        curl_close($ch);
-        return $result;
-    }
+    return $result;
 }
 
 ?>
